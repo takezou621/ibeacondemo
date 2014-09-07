@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2252E3119BC55B800AEA64E /* AGPushNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2252E2F19BC55B800AEA64E /* AGPushNoteView.m */; };
+		D2252E3219BC55B800AEA64E /* AGPushNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2252E3019BC55B800AEA64E /* AGPushNoteView.xib */; };
+		D2252E3419BC57A800AEA64E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2252E3319BC57A800AEA64E /* Foundation.framework */; };
+		D2252E3619BC57B000AEA64E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2252E3519BC57B000AEA64E /* UIKit.framework */; };
+		D2252E3919BC711700AEA64E /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2252E3819BC711700AEA64E /* apple.jpg */; };
+		D2252E3B19BC730F00AEA64E /* mouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2252E3A19BC730F00AEA64E /* mouse.jpg */; };
 		D229E8FD19BC229500330B92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D229E8FC19BC229500330B92 /* main.m */; };
 		D229E90019BC229500330B92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D229E8FF19BC229500330B92 /* AppDelegate.m */; };
 		D229E90319BC229500330B92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D229E90219BC229500330B92 /* ViewController.m */; };
 		D229E90619BC229500330B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D229E90419BC229500330B92 /* Main.storyboard */; };
 		D229E90819BC229500330B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D229E90719BC229500330B92 /* Images.xcassets */; };
 		D229E91419BC229500330B92 /* ibeacondemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D229E91319BC229500330B92 /* ibeacondemoTests.m */; };
+		D24724C619BC4DED00E27E87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24724C519BC4DED00E27E87 /* DetailViewController.m */; };
+		D24724C819BC4E6B00E27E87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24724C719BC4E6B00E27E87 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2252E2E19BC55B800AEA64E /* AGPushNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGPushNoteView.h; path = AGPushNote/AGPushNote/AGPushNoteView.h; sourceTree = SOURCE_ROOT; };
+		D2252E2F19BC55B800AEA64E /* AGPushNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGPushNoteView.m; path = AGPushNote/AGPushNote/AGPushNoteView.m; sourceTree = SOURCE_ROOT; };
+		D2252E3019BC55B800AEA64E /* AGPushNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGPushNoteView.xib; path = AGPushNote/AGPushNote/AGPushNoteView.xib; sourceTree = SOURCE_ROOT; };
+		D2252E3319BC57A800AEA64E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2252E3519BC57B000AEA64E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2252E3819BC711700AEA64E /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		D2252E3A19BC730F00AEA64E /* mouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mouse.jpg; sourceTree = "<group>"; };
 		D229E8F719BC229500330B92 /* ibeacondemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ibeacondemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D229E8FB19BC229500330B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D229E8FC19BC229500330B92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +53,9 @@
 		D229E90D19BC229500330B92 /* ibeacondemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibeacondemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D229E91219BC229500330B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D229E91319BC229500330B92 /* ibeacondemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ibeacondemoTests.m; sourceTree = "<group>"; };
+		D24724C419BC4DED00E27E87 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D24724C519BC4DED00E27E87 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D24724C719BC4E6B00E27E87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2252E3619BC57B000AEA64E /* UIKit.framework in Frameworks */,
+				D2252E3419BC57A800AEA64E /* Foundation.framework in Frameworks */,
+				D24724C819BC4E6B00E27E87 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +79,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2252E2D19BC55AC00AEA64E /* AGPushNote */ = {
+			isa = PBXGroup;
+			children = (
+				D2252E2E19BC55B800AEA64E /* AGPushNoteView.h */,
+				D2252E2F19BC55B800AEA64E /* AGPushNoteView.m */,
+				D2252E3019BC55B800AEA64E /* AGPushNoteView.xib */,
+			);
+			name = AGPushNote;
+			sourceTree = "<group>";
+		};
+		D2252E3719BC710800AEA64E /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D2252E3819BC711700AEA64E /* apple.jpg */,
+				D2252E3A19BC730F00AEA64E /* mouse.jpg */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		D229E8EE19BC229400330B92 = {
 			isa = PBXGroup;
 			children = (
+				D2252E3519BC57B000AEA64E /* UIKit.framework */,
+				D2252E3319BC57A800AEA64E /* Foundation.framework */,
+				D24724C719BC4E6B00E27E87 /* CoreLocation.framework */,
 				D229E8F919BC229500330B92 /* ibeacondemo */,
 				D229E91019BC229500330B92 /* ibeacondemoTests */,
 				D229E8F819BC229500330B92 /* Products */,
@@ -79,6 +122,8 @@
 		D229E8F919BC229500330B92 /* ibeacondemo */ = {
 			isa = PBXGroup;
 			children = (
+				D2252E3719BC710800AEA64E /* image */,
+				D2252E2D19BC55AC00AEA64E /* AGPushNote */,
 				D229E8FE19BC229500330B92 /* AppDelegate.h */,
 				D229E8FF19BC229500330B92 /* AppDelegate.m */,
 				D229E90119BC229500330B92 /* ViewController.h */,
@@ -86,6 +131,8 @@
 				D229E90419BC229500330B92 /* Main.storyboard */,
 				D229E90719BC229500330B92 /* Images.xcassets */,
 				D229E8FA19BC229500330B92 /* Supporting Files */,
+				D24724C419BC4DED00E27E87 /* DetailViewController.h */,
+				D24724C519BC4DED00E27E87 /* DetailViewController.m */,
 			);
 			path = ibeacondemo;
 			sourceTree = "<group>";
@@ -196,7 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2252E3219BC55B800AEA64E /* AGPushNoteView.xib in Resources */,
+				D2252E3B19BC730F00AEA64E /* mouse.jpg in Resources */,
 				D229E90619BC229500330B92 /* Main.storyboard in Resources */,
+				D2252E3919BC711700AEA64E /* apple.jpg in Resources */,
 				D229E90819BC229500330B92 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +268,8 @@
 				D229E90319BC229500330B92 /* ViewController.m in Sources */,
 				D229E90019BC229500330B92 /* AppDelegate.m in Sources */,
 				D229E8FD19BC229500330B92 /* main.m in Sources */,
+				D24724C619BC4DED00E27E87 /* DetailViewController.m in Sources */,
+				D2252E3119BC55B800AEA64E /* AGPushNoteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +388,7 @@
 				INFOPLIST_FILE = ibeacondemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a0732d2d-6904-4dd9-b836-7a0d4435185f";
+				PROVISIONING_PROFILE = "eb9f37c0-742b-4a0e-8c40-ae6820b7bbd5";
 			};
 			name = Debug;
 		};
@@ -349,7 +401,7 @@
 				INFOPLIST_FILE = ibeacondemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a60548ca-133c-401c-b191-1f28fc3b2119";
+				PROVISIONING_PROFILE = "3a63125c-2806-44c8-ae58-5854e304c8a4";
 			};
 			name = Release;
 		};

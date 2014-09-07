@@ -1,0 +1,3 @@
+[submodule "AGPushNote"]
+	path = AGPushNote
+	url = git://github.com/avielg/AGPushNote.git
