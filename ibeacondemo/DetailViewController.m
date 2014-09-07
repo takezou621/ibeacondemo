@@ -9,6 +9,9 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+{
+    NSUserDefaults *defaults;
+}
 
 @end
 
@@ -22,16 +25,31 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+   
+    NSLog(@"set minor %d",self.beacon.minor.intValue);
+    defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.beacon.minor forKey:@"minor"];
+    [defaults synchronize];
+    
     if ([self.beacon.minor isEqual:[NSNumber numberWithInt:1]]) {
         self.imageView.image = [UIImage imageNamed:@"apple.jpg"];
     }else if ([self.beacon.minor isEqual:[NSNumber numberWithInt:2]]) {
         self.imageView.image = [UIImage imageNamed:@"mouse.jpg"];
     }
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+  //  [defaults setObject:nil forKey:@"minor"];
+  //  [defaults synchronize];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   // [defaults setObject:nil forKey:@"minor"];
+   // [defaults synchronize];
+    
 }
 
 /*

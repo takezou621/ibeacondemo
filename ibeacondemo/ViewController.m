@@ -92,7 +92,6 @@
             case CLRegionStateInside:
                 if ([region isMemberOfClass:[CLBeaconRegion class]] && [CLLocationManager isRangingAvailable]) {
                     [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
-                    
                 }
                 
                 break;
@@ -113,18 +112,27 @@
         // CLProximityUnknown以外のビーコンだけを取り出す
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"proximity != %d", CLProximityUnknown];
         NSArray *validBeacons = [beacons filteredArrayUsingPredicate:predicate];
-        
         CLBeacon *nearestBeacon = validBeacons.firstObject;
-        
         NSString *rangeMessage;
         
         switch (nearestBeacon.proximity) {
-            case CLProximityImmediate:
+            case CLProximityImmediate:{
                 rangeMessage = @"近い";
-                [self.locationManager stopRangingBeaconsInRegion:(CLBeaconRegion *)region];
-                [self performSegueWithIdentifier:@"detailSegue" sender:nearestBeacon];
-                
+                //[self.locationManager stopRangingBeaconsInRegion:(CLBeaconRegion *)region];
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                NSNumber *minor = [defaults objectForKey:@"minor"];
+                NSLog(@"%d , %d",minor.intValue,nearestBeacon.minor.intValue);
+                if (minor.intValue != nearestBeacon.minor.intValue) {
+                    //[self performSegueWithIdentifier:@"detailSegue" sender:nearestBeacon];
+                    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    
+                    DetailViewController *vc = [sb instantiateViewControllerWithIdentifier:@"detailVC"];
+                    vc.beacon = nearestBeacon;
+                    [self.navigationController popViewControllerAnimated:NO];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
                 break;
+            }
             case CLProximityNear:
                 rangeMessage = @"やや近い";
                 break;
@@ -134,6 +142,7 @@
             default:
                 break;
         }
+
         
         NSString *message = [NSString stringWithFormat:@"%@ major:%@, minor:%@, accuracy:%f,rssi:%d",
                              rangeMessage,

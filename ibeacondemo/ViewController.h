@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-- (IBAction)buttonPushAction:(id)sender;
 
 
 @end
