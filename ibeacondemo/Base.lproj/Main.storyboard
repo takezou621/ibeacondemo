@@ -42,66 +42,34 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flU-P3-fSN">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="4B0-c2-HfZ"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="4B0-c2-HfZ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="218" y="300" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="4B0-c2-HfZ"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="buttonPushAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Au4-Vx-is6"/>
-                                    <segue destination="qjX-yc-tRx" kind="push" identifier="detailSegue" id="B0w-EV-IMq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="spf-rm-KeD" secondAttribute="trailing" constant="80" id="0LB-qB-KNS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="flU-P3-fSN" secondAttribute="trailing" constant="120" id="Nmp-eU-hus"/>
                             <constraint firstItem="spf-rm-KeD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="29" id="dqK-Fi-jsg"/>
-                            <constraint firstItem="flU-P3-fSN" firstAttribute="top" secondItem="spf-rm-KeD" secondAttribute="bottom" constant="186" id="kVc-DN-Lx8"/>
                             <constraint firstItem="spf-rm-KeD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="mzF-SM-rTK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="spf-rm-KeD" secondAttribute="trailing" constant="30" id="zAQ-Xz-UNj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="spf-rm-KeD"/>
-                                <exclude reference="flU-P3-fSN"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0LB-qB-KNS"/>
                                 <exclude reference="dqK-Fi-jsg"/>
                                 <exclude reference="mzF-SM-rTK"/>
                                 <exclude reference="zAQ-Xz-UNj"/>
-                                <exclude reference="Nmp-eU-hus"/>
-                                <exclude reference="kVc-DN-Lx8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="spf-rm-KeD"/>
-                                <include reference="flU-P3-fSN"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0LB-qB-KNS"/>
                                 <include reference="dqK-Fi-jsg"/>
                                 <include reference="mzF-SM-rTK"/>
                                 <include reference="zAQ-Xz-UNj"/>
-                                <include reference="Nmp-eU-hus"/>
-                                <include reference="kVc-DN-Lx8"/>
                             </mask>
                         </variation>
                     </view>
