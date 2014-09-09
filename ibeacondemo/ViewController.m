@@ -70,7 +70,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
-    [AGPushNoteView showWithNotificationMessage:@"enter region"];
+    //[AGPushNoteView showWithNotificationMessage:@"enter region"];
     
     if ([region isMemberOfClass:[CLBeaconRegion class]] &&
         [CLLocationManager isRangingAvailable]) {
@@ -80,7 +80,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
 {
-    [AGPushNoteView showWithNotificationMessage:@"exit region"];
+    //[AGPushNoteView showWithNotificationMessage:@"exit region"];
     
     if ([region isMemberOfClass:[CLBeaconRegion class]] &&
         [CLLocationManager isRangingAvailable]) {
@@ -156,7 +156,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error
 {
-    [AGPushNoteView showWithNotificationMessage:@"Exit Region"];
+    //[AGPushNoteView showWithNotificationMessage:@"Exit Region"];
 }
 
 #pragma mark - 

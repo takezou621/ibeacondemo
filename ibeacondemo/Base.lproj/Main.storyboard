@@ -4,7 +4,6 @@
         <deployment defaultVersion="1792" identifier="iOS"/>
         <development version="5100" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -62,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-KM-3af">
-                                <rect key="frame" x="16" y="47" width="381" height="226"/>
+                                <rect key="frame" x="8" y="4" width="552" height="336"/>
                                 <color key="backgroundColor" red="1" green="0.20346903473703593" blue="0.30420362456420769" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>

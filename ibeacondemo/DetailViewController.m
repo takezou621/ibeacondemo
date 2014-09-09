@@ -86,11 +86,11 @@
 {
     NSLog(@"video end");
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(20, 400, 280, 80);
+    button.frame = CGRectMake(50, 200, 480, 80);
     button.backgroundColor = buttonColor;
     [button setTitle:buttonTitle forState:UIControlStateNormal];
-    button.titleLabel.textColor = [UIColor whiteColor];
-    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:24];
     [self.view addSubview:button];
 }
 
