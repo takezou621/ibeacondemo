@@ -22,7 +22,7 @@
 		<key>0DF4D32918ECB0728FCE0AB9A2C211064CFF75EE</key>
 		<string>../..</string>
 		<key>781572FBDDD7C924BD8F4605FE96D360D8F18313</key>
-		<string>../../AGPushNote/</string>
+		<string>../../AGPushNote</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/takezou621/ibeacondemo.git</string>

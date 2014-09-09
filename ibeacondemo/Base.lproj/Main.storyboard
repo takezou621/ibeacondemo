@@ -93,91 +93,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7d-gF-Esy">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Tcv-1v-S7S"/>
-                                    <constraint firstAttribute="width" constant="46" id="qhr-fS-bz6"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Tcv-1v-S7S"/>
-                                        <exclude reference="qhr-fS-bz6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="177" y="43" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="Tcv-1v-S7S"/>
-                                        <include reference="qhr-fS-bz6"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="startPlay:" destination="qjX-yc-tRx" eventType="touchUpInside" id="naU-mW-XsZ"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-KM-3af">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="406" id="9A7-nb-61T">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="320"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="387" id="UW3-Ue-4vC"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="9A7-nb-61T"/>
-                                        <exclude reference="UW3-Ue-4vC"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="135" width="397" height="387"/>
-                                    <mask key="constraints">
-                                        <include reference="9A7-nb-61T"/>
-                                        <include reference="UW3-Ue-4vC"/>
-                                    </mask>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="156" width="327" height="211"/>
                                 </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="m7d-gF-Esy" firstAttribute="top" secondItem="zyz-kb-H1H" secondAttribute="bottom" constant="73" id="GDm-Yk-dEn">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="FOV-KM-3af" firstAttribute="top" secondItem="m7d-gF-Esy" secondAttribute="bottom" constant="62" id="J79-rt-HpF">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="Pts-j7-5DK" firstAttribute="top" secondItem="FOV-KM-3af" secondAttribute="bottom" constant="228" id="Ow2-LK-gV0">
-                                <variation key="heightClass=regular-widthClass=compact" constant="60"/>
-                            </constraint>
-                            <constraint firstAttribute="trailingMargin" secondItem="m7d-gF-Esy" secondAttribute="trailing" constant="115" id="gjv-Cx-6fr"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="m7d-gF-Esy"/>
                                 <exclude reference="FOV-KM-3af"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="J79-rt-HpF"/>
-                                <exclude reference="GDm-Yk-dEn"/>
-                                <exclude reference="gjv-Cx-6fr"/>
-                                <exclude reference="Ow2-LK-gV0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="m7d-gF-Esy"/>
                                 <include reference="FOV-KM-3af"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="J79-rt-HpF"/>
-                                <include reference="GDm-Yk-dEn"/>
-                                <include reference="gjv-Cx-6fr"/>
-                                <include reference="Ow2-LK-gV0"/>
                             </mask>
                         </variation>
                     </view>

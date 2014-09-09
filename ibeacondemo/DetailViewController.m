@@ -11,8 +11,10 @@
 @interface DetailViewController ()
 {
     NSUserDefaults *defaults;
+    NSString *path;
+    NSString *buttonTitle;
+    UIColor  *buttonColor;
 }
-
 @end
 
 @implementation DetailViewController
@@ -34,16 +36,23 @@
     
     if ([self.beacon.minor isEqual:[NSNumber numberWithInt:1]]) {
         // 1の場合
-        //self.imageView.image = [UIImage imageNamed:@"apple.jpg"];
+        path = [[NSBundle mainBundle] pathForResource:@"micky" ofType:@"mp4"];
+        buttonTitle = @"ミッキーからの贈り物をゲット!";
+        buttonColor = [UIColor greenColor];
     }else if ([self.beacon.minor isEqual:[NSNumber numberWithInt:2]]) {
         // 2の場合
-        //self.imageView.image = [UIImage imageNamed:@"mouse.jpg"];
+        path = [[NSBundle mainBundle] pathForResource:@"duck" ofType:@"mp4"];
+        buttonTitle = @"ドナルドダックからの贈り物をゲット!";
+        buttonColor = [UIColor redColor];
+        
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(onVideoEnd)
                                                  name:AVPlayerItemDidPlayToEndTimeNotification
                                                object:nil];
+    
+    [self setupPlayer];
     
 }
 
@@ -76,13 +85,19 @@
 - (void)onVideoEnd
 {
     NSLog(@"video end");
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(20, 400, 280, 80);
+    button.backgroundColor = buttonColor;
+    [button setTitle:buttonTitle forState:UIControlStateNormal];
+    button.titleLabel.textColor = [UIColor whiteColor];
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    [self.view addSubview:button];
 }
 
 - (void)setupPlayer
 {
     if (self.player == nil) {
         
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"micky" ofType:@"mp4"];
         NSURL *url = [NSURL fileURLWithPath:path];
         self.player = [AVPlayer playerWithURL:url];
         
