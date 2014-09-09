@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DL2-zQ-4g8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DL2-zQ-4g8">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
+        <development version="5100" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
@@ -16,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spf-rm-KeD">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="368" translatesAutoresizingMaskIntoConstraints="NO" id="spf-rm-KeD">
+                                <rect key="frame" x="16" y="93" width="368" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="9Qs-OU-KdK"/>
                                     <constraint firstAttribute="width" constant="368" id="fq0-2T-XSK"/>
@@ -28,18 +29,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="9Qs-OU-KdK"/>
-                                        <exclude reference="fq0-2T-XSK"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="9Qs-OU-KdK"/>
-                                        <include reference="fq0-2T-XSK"/>
-                                    </mask>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -49,28 +38,6 @@
                             <constraint firstItem="spf-rm-KeD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="mzF-SM-rTK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="spf-rm-KeD" secondAttribute="trailing" constant="30" id="zAQ-Xz-UNj"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="spf-rm-KeD"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="0LB-qB-KNS"/>
-                                <exclude reference="dqK-Fi-jsg"/>
-                                <exclude reference="mzF-SM-rTK"/>
-                                <exclude reference="zAQ-Xz-UNj"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="spf-rm-KeD"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="0LB-qB-KNS"/>
-                                <include reference="dqK-Fi-jsg"/>
-                                <include reference="mzF-SM-rTK"/>
-                                <include reference="zAQ-Xz-UNj"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Rvf-pg-WvU"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -80,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762" y="-126"/>
+            <point key="canvasLocation" x="-236" y="-336"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="241-h6-coj">
@@ -91,28 +58,15 @@
                         <viewControllerLayoutGuide type="bottom" id="Pts-j7-5DK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1XH-hF-kKm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-KM-3af">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-KM-3af">
+                                <rect key="frame" x="16" y="47" width="381" height="226"/>
                                 <color key="backgroundColor" red="1" green="0.20346903473703593" blue="0.30420362456420769" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="57" width="167" height="357"/>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="FOV-KM-3af"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="FOV-KM-3af"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="x24-qT-V37"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -122,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LH-6H-KTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145.5" y="-125.25"/>
+            <point key="canvasLocation" x="382" y="-108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="laG-wb-cPy">
@@ -139,7 +93,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PI0-VI-y9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1689" y="-126"/>
+            <point key="canvasLocation" x="-900.79999999999995" y="-119.28"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
 </document>
