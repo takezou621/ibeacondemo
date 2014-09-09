@@ -19,8 +19,11 @@
 		D229E90619BC229500330B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D229E90419BC229500330B92 /* Main.storyboard */; };
 		D229E90819BC229500330B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D229E90719BC229500330B92 /* Images.xcassets */; };
 		D229E91419BC229500330B92 /* ibeacondemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D229E91319BC229500330B92 /* ibeacondemoTests.m */; };
+		D22F233A19BE782A0059F841 /* micky.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D22F233919BE782A0059F841 /* micky.mp4 */; };
+		D22F233C19BE78360059F841 /* duck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D22F233B19BE78360059F841 /* duck.mp4 */; };
 		D24724C619BC4DED00E27E87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24724C519BC4DED00E27E87 /* DetailViewController.m */; };
 		D24724C819BC4E6B00E27E87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24724C719BC4E6B00E27E87 /* CoreLocation.framework */; };
+		D2EEC6EC19BDD371009B377C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EEC6EB19BDD371009B377C /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +56,12 @@
 		D229E90D19BC229500330B92 /* ibeacondemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibeacondemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D229E91219BC229500330B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D229E91319BC229500330B92 /* ibeacondemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ibeacondemoTests.m; sourceTree = "<group>"; };
+		D22F233919BE782A0059F841 /* micky.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = micky.mp4; sourceTree = "<group>"; };
+		D22F233B19BE78360059F841 /* duck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = duck.mp4; sourceTree = "<group>"; };
 		D24724C419BC4DED00E27E87 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D24724C519BC4DED00E27E87 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D24724C719BC4E6B00E27E87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D2EEC6EB19BDD371009B377C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EEC6EC19BDD371009B377C /* AVFoundation.framework in Frameworks */,
 				D2252E3619BC57B000AEA64E /* UIKit.framework in Frameworks */,
 				D2252E3419BC57A800AEA64E /* Foundation.framework in Frameworks */,
 				D24724C819BC4E6B00E27E87 /* CoreLocation.framework in Frameworks */,
@@ -94,6 +101,8 @@
 			children = (
 				D2252E3819BC711700AEA64E /* apple.jpg */,
 				D2252E3A19BC730F00AEA64E /* mouse.jpg */,
+				D22F233B19BE78360059F841 /* duck.mp4 */,
+				D22F233919BE782A0059F841 /* micky.mp4 */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -101,6 +110,7 @@
 		D229E8EE19BC229400330B92 = {
 			isa = PBXGroup;
 			children = (
+				D2EEC6EB19BDD371009B377C /* AVFoundation.framework */,
 				D2252E3519BC57B000AEA64E /* UIKit.framework */,
 				D2252E3319BC57A800AEA64E /* Foundation.framework */,
 				D24724C719BC4E6B00E27E87 /* CoreLocation.framework */,
@@ -246,7 +256,9 @@
 				D2252E3219BC55B800AEA64E /* AGPushNoteView.xib in Resources */,
 				D2252E3B19BC730F00AEA64E /* mouse.jpg in Resources */,
 				D229E90619BC229500330B92 /* Main.storyboard in Resources */,
+				D22F233A19BE782A0059F841 /* micky.mp4 in Resources */,
 				D2252E3919BC711700AEA64E /* apple.jpg in Resources */,
+				D22F233C19BE78360059F841 /* duck.mp4 in Resources */,
 				D229E90819BC229500330B92 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
