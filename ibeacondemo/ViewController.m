@@ -35,6 +35,9 @@
                                                           identifier:@"jp.co.uxf.ibeacontest"];
         [self.locationManager startMonitoringForRegion:self.beaconRegion];
          */
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setValue:@"1234" forKey:@"minor"];
+        [defaults synchronize];
     }
 }
 
