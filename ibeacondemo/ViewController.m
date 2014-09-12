@@ -136,16 +136,50 @@
                 }
                 break;
             }
-            case CLProximityNear:
+            case CLProximityNear:{
                 rangeMessage = @"やや近い";
+                ///
+                
+                //[self.locationManager stopRangingBeaconsInRegion:(CLBeaconRegion *)region];
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                NSNumber *minor = [defaults objectForKey:@"minor"];
+                NSLog(@"%d , %d",minor.intValue,nearestBeacon.minor.intValue);
+                if (minor.intValue != nearestBeacon.minor.intValue) {
+                    //[self performSegueWithIdentifier:@"detailSegue" sender:nearestBeacon];
+                    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    
+                    DetailViewController *vc = [sb instantiateViewControllerWithIdentifier:@"detailVC"];
+                    vc.beacon = nearestBeacon;
+                    [self.navigationController popViewControllerAnimated:NO];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                ///
                 break;
-            case CLProximityFar:
+            }
+            case CLProximityFar:{
                 rangeMessage = @"遠い";
+                ///
+                
+                //[self.locationManager stopRangingBeaconsInRegion:(CLBeaconRegion *)region];
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                NSNumber *minor = [defaults objectForKey:@"minor"];
+                NSLog(@"%d , %d",minor.intValue,nearestBeacon.minor.intValue);
+                if (minor.intValue != nearestBeacon.minor.intValue) {
+                    //[self performSegueWithIdentifier:@"detailSegue" sender:nearestBeacon];
+                    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    
+                    DetailViewController *vc = [sb instantiateViewControllerWithIdentifier:@"detailVC"];
+                    vc.beacon = nearestBeacon;
+                    [self.navigationController popViewControllerAnimated:NO];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                ///
                 break;
+            }
             default:
                 break;
         }
-
+        
         
         NSString *message = [NSString stringWithFormat:@"%@ major:%@, minor:%@, accuracy:%f,rssi:%d",
                              rangeMessage,

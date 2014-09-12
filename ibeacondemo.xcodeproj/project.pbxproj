@@ -400,7 +400,7 @@
 				INFOPLIST_FILE = ibeacondemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "eb9f37c0-742b-4a0e-8c40-ae6820b7bbd5";
+				PROVISIONING_PROFILE = "a0732d2d-6904-4dd9-b836-7a0d4435185f";
 			};
 			name = Debug;
 		};
@@ -413,7 +413,7 @@
 				INFOPLIST_FILE = ibeacondemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3a63125c-2806-44c8-ae58-5854e304c8a4";
+				PROVISIONING_PROFILE = "a60548ca-133c-401c-b191-1f28fc3b2119";
 			};
 			name = Release;
 		};
